@@ -1,0 +1,121 @@
+1. String to Integer
+Method: Integer.parseInt(String str)
+Example: int num = Integer.parseInt("123");
+
+
+2. Integer to String
+Method: Integer.toString(int num) or String.valueOf(int num)
+Example: String str = Integer.toString(123);
+
+3. String to Double
+Method: Double.parseDouble(String str)
+Example: double num = Double.parseDouble("123.45");
+
+4. Double to String
+Method: Double.toString(double num) or String.valueOf(double num)
+Example: String str = Double.toString(123.45);
+
+5. String to Float
+Method: Float.parseFloat(String str)
+Example: float num = Float.parseFloat("123.45");
+
+6. Float to String
+Method: Float.toString(float num) or String.valueOf(float num)
+Example: String str = Float.toString(123.45f);
+
+7. String to Long
+Method: Long.parseLong(String str)
+Example: long num = Long.parseLong("123456789");
+
+8. Long to String
+Method: Long.toString(long num) or String.valueOf(long num)
+Example: String str = Long.toString(123456789L);
+
+9. Character to String
+Method: Character.toString(char ch) or String.valueOf(char ch)
+Example: String str = Character.toString('A');
+
+10. String to Character
+Method: String.charAt(int index)
+Example: char ch = str.charAt(0);
+
+11. Integer to Double
+Method: Type casting (double)
+Example: double d = (double) 123;
+
+12. Double to Integer
+Method: Type casting (int)
+Example: int i = (int) 123.45;
+
+13. String to Boolean
+Method: Boolean.parseBoolean(String str)
+Example: boolean bool = Boolean.parseBoolean("true");
+
+14. Boolean to String
+Method: Boolean.toString(boolean bool) or String.valueOf(boolean bool)
+Example: String str = Boolean.toString(true);
+
+15. Number to Binary, Octal, Hexadecimal String
+Methods: Integer.toBinaryString(int num), Integer.toOctalString(int num), Integer.toHexString(int num)
+Example: String bin = Integer.toBinaryString(15); // "1111"
+
+16. Binary, Octal, Hexadecimal String to Integer
+Method: Integer.parseInt(String str, int radix)
+Example: int num = Integer.parseInt("1111", 2); // Binary to Integer
+// Write Java program to Convert byte into the string
+import java.util.Scanner;
+
+public class Main {
+   public Main() { 
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      System.out.println("Enter the byte"); 
+      byte var2 = var1.nextByte();
+     
+      String var3 = Byte.toString(var2); 
+      System.out.println(var3);
+   }
+}
+  
+// 2. Write Java program to Convert an Integer to String
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int num = sc.nextInt();
+        String str = Integer.toString(num);
+        System.out.println(str);
+        
+    }
+}
+
+
+// 3.Write Java program to Convert Double to String
+import java.util.*;
+public class Main {
+    public static void main(String args[]){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter the number");
+        double num =sc.nextDouble();
+        String str =Double.toString(num);
+        System.out.println(str);
+    }
+}
+
+
+
+//  4.Write Java program to Convert String to Integer
+import java.util.*;
+public class Main{
+    public static void main(){
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Enter the String");
+         String str = sc.nextLine();
+         int num = Integer.parseInt(str);
+         System.out.println(num);
+
+    }
+}
